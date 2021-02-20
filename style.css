@@ -25,8 +25,9 @@ p {
 
 .container {
     width: 100%;
-    max-width: 1170px;
+    max-width: 1200px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 /* Header */
@@ -239,5 +240,57 @@ p {
     font-size: 14px;
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
+    
+}
+
+
+/* Team */
+
+.team {
+    margin: 100px 0;
+}
+
+.team_inner {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.team_item {
+    width: 25%;
+    padding: 0 15px;
+    margin-bottom: 30px;
+}
+
+.team_photo {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+
+}
+
+.team_name {
+    font-size: 22px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    color: #2d3033;
+    margin-bottom: 15px;
+}
+
+.team_position {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    color: #e84545;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.team_description {
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
     
 }
