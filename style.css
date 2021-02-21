@@ -247,7 +247,7 @@ p {
 /* Team */
 
 .team {
-    margin: 100px 0;
+    margin: 100px 0 70px;
 }
 
 .team_inner {
@@ -292,5 +292,99 @@ p {
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
     line-height: 1.5;
-    
+    margin-bottom: 27px;
 }
+
+/* Connection */
+
+.team_connection {
+    display: flex;
+}
+
+.connection_item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #e8ecee;
+    margin-right: 4px;
+    background-color: #fff;
+
+    transition: background .1s linear;
+}
+
+
+.connection_item:hover {
+    background-color: #e8ecee;
+}
+
+.connection_item:hover .connection_icon {
+    fill: #e84545;
+}
+
+.connection_icon {
+    display: block;
+    fill: #c6cacc;
+    height: 18px;
+    transition: fill .1s linear;
+}
+
+
+/* Testimonials */
+
+.testimonials {
+    width: 100%;
+    background-color: #53354a;
+    height: 501px;
+    overflow: hidden;
+}
+
+.testimonials_item {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.testimonials_content {
+    width: 50%;
+    padding-left: 85px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.testimonials_photo {
+    width: 50%;
+    height: 500px;
+    position: relative;
+
+}
+
+.testimonials_text {
+    font-family: 'Cardo', serif;
+    font-weight: 400;
+    font-size: 36px;
+    margin-bottom: 40px;
+    font-style: italic;
+    line-height: 1.2;
+    color: #fff;
+
+}
+
+.testimonials_name {
+    font-size: 13px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.test_img {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: 1;
+
+    transform: translateY(-50%);
+}
+
