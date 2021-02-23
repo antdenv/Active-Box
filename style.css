@@ -355,6 +355,7 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center;
+
 }
 
 .testimonials_photo {
@@ -485,6 +486,7 @@ p {
     background-color: #313454;
     padding: 30px 0;
     margin-top: -3px;
+    height: auto;
 }
 
 .copyright_text {
@@ -496,4 +498,237 @@ p {
 
 .copyright_text span {
     color: #fff;
+}
+
+/* Burger */
+
+.burger {
+    display: none;
+    background: none;
+    border: 0;
+    padding: 9px 0;
+    cursor: pointer;
+}
+
+.burger_item {
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+    margin-bottom: 5px;
+    font-size: 0;
+    color: transparent;
+    position: relative;
+
+}
+
+.burger_item:before,
+.burger_item:after  {
+    content: "";
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    background-color: #fff;
+
+}
+
+.burger_item:before {
+    top: -8px;
+}
+
+.burger_item:after {
+    top: 8px;
+}
+
+
+
+/* Media */
+
+@media (max-width: 1300px) {
+    /* Work */
+
+    .portfolio_item {
+        width: 50%;
+    }
+
+    .portfolio_image {
+        width: 100%;
+    }
+}
+
+@media (max-width: 991px) {
+    /* Intro */
+
+    .intro_title {
+        font-size: 40px;
+    }
+
+    .nav {
+        display: none;
+    }
+
+
+    /* Burger */
+
+    .burger {
+        display: block;
+    }
+
+    /* Features */
+
+    .features_item {
+        width: 50%;
+    }
+
+    /* Team */
+
+    .team_item {
+        width: 50%;
+        text-align: center;
+    }
+
+    .team_photo {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .team_connection {
+        justify-content: center;
+    }
+    
+    .team {
+        margin: 80px 0;
+    }
+
+    /* Testimonials */
+
+    .testimonials {
+        display: none;
+    }
+
+
+}
+
+@media (max-width: 767px) {
+
+    /* Intro */
+
+   .intro{
+    height: auto;
+    padding-bottom: 30px;
+    padding-top: 130px;
+   }
+
+   .intro_title {
+       font-size: 30px;
+   }
+
+   .intro_subtitle {
+       font-size: 16px;
+       margin-bottom: 30px;
+   }
+
+   .features_item {
+    width: 100%;
+    margin-bottom: 65px;
+}
+
+    .features_item:last-child {
+        margin-bottom: 0;
+    }
+    
+    .features {
+        margin-top: 80px;
+        margin-bottom: 120px;
+    }
+
+    /* Works */
+
+    .portfolio_item {
+        width: 100%;
+        height: 300px;
+    }
+
+    .portfolio_image {
+        width: 100%;
+    }
+
+    /* Team */
+
+    .team_item {
+        width: 100%;
+        text-align: center;
+    }
+
+    .team_photo {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .team_connection {
+        justify-content: center;
+    }
+
+    .team {
+        margin: 70px 0;
+    }
+
+    .team_item {
+        margin-bottom: 0;
+    }
+
+    /* Testimonials */
+
+    .testimonials {
+        display: none;
+    }
+
+    /* Button */
+
+    .button--long {
+        max-width: 260px;
+    }
+
+    .download {
+        margin: 0px 0 50px;
+    }
+
+    .download_title {
+        font-size: 24px;
+    }
+
+    /* Footer */
+
+    .footer_item {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .footer_items {
+        padding: 30px 0 0;
+    }
+
+    .footer {
+        height: auto;
+    }
+
+    .footer_copyright {
+        height: auto;
+    }
+
+}
+
+
+@media (max-width: 415px) {
+    .portfolio_image {
+        height: 100%;
+        min-width: 414px;
+    }
+
+    .team_connection {
+        margin-bottom: 25px;
+    }
 }
